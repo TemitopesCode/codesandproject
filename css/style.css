@@ -8,12 +8,12 @@
 
 }
 
-body {
+/*body { this body is for dark-mode*/
 /*  padding: 25px;*/
 /*  background-color: white;*/
 /*  color: black;*/
   /*font-size: 25px;*/
-}
+/*}*/
 
 .dark-mode {
   background-color: black;
@@ -28,7 +28,7 @@ p {
 
 body {
 
- width: 1400px; /* Make this site really wide */
+/* width: 1400px; /* Make this site really wide */
   overflow-x: hidden; 
 }
 
@@ -94,7 +94,6 @@ a {
 
 .back-to-top {
     position: fixed;
-    display: none;
     right: 30px;
     bottom: 30px;
     z-index: 99;
@@ -103,9 +102,9 @@ a {
 .input-container {
     display: flex;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 20px;
     padding-left: 5px;
-    border-radius: 9px;
+    border-radius: 10px;
 
 }
  input {
@@ -114,13 +113,14 @@ a {
     background-color: transparent;
       
 }
+
 .navbar-nav {
- margin-left: 150px;
+ margin-left: 75px;
 }
 
 
 .navbar-dark .navbar-nav .nav-link {
-    padding: 10px 45px;
+    padding: 10px 40px;
     font-size: 16px;
     font-weight: 500;
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -136,11 +136,18 @@ a {
 }
 
 @media (width: 991.98px) {
-    .navbar-dark .navbar-nav .nav-link  {
+   .navbar-nav .navbar-dark .nav-link {
         padding: 10px 15px;
     }
 }
 
+@media (width: 1024px) {
+   .navbar-nav {
+ display: flex;
+ flex-wrap: wrap;
+
+}
+    }
 
 .img-box img {
     width: 1400px;
